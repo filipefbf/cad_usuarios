@@ -20,7 +20,6 @@ from app_cad_usuarios import views
 
 urlpatterns = [
     # rota, view, nome da rota
-    path('admin/', admin.site.urls),
-    path('', views.home,name='home'),
-    path('/usuarios', views.usuarios,name='listagem_usuarios'),
+    path('', views.home, name='home'),
+    path('usuarios/', views.usuarios, name='listagem_usuarios'),
 ]
